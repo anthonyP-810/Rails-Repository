@@ -3,7 +3,6 @@ default: &default
   encoding: unicode
   #username used to be postgres
   username: ubuntu
-  password: nohack1
   pool: 5
 
 development:
@@ -17,5 +16,3 @@ test:
 production:
   <<: *default
   database: belt_review
-  username: seeks
-  password: <%= ENV['SEEKS_DATABASE_PASSWORD'] %>
