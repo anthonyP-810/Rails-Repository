@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 gem 'rails', '4.2.5.1' #update with the current version of your Rails
 gem 'pg'
+gem 'postgresql'
 gem 'rails-footnotes'
 gem 'tzinfo-data'
 gem 'hirb'
