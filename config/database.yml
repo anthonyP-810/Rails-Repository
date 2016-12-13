@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: nohack1
+  pool: 5
+
+development:
+  <<: *default
+  database: belt_review_dev
+
+test:
+  <<: *default
+  database: belt_review_test
+
+production:
+  <<: *default
+  database: belt_review
+  username: seeks
+  password: <%= ENV['SEEKS_DATABASE_PASSWORD'] %>
